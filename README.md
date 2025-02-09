@@ -110,7 +110,7 @@ The database consists of **three primary tables**:
 3. **`temperature_table`** - Stores temperature readings at 15-minute intervals.
 
 
-![ERD](1739083588040.png)
+![ERD](1739083588040.jpg)
 
 
 #### SQL Table Creation Scripts
