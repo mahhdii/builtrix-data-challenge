@@ -23,25 +23,31 @@ The **Builtrix Data Engineering Challenge** involves designing an end-to-end dat
 ## Project Structure
 
 📂 Builtrix-data-challenge
- ├── 📂 data
- │   ├── 📂 raw             # Raw data (original files)
- │   ├── 📂 processed       # Processed & cleaned data
- │   ├── 📂 cleaned         # Final transformed data
- │   ├── 📂 reports         # Data quality reports
- │   ├── 📂 output          # Exported tables from PostgreSQL (Energy_Consumption.csv, Energy_Breakdown.csv)
- ├── 📂 sql
- │   ├── 01_create_tables.sql       # Schema for PostgreSQL tables
- │   ├── 02_data_aggregation.sql    # Aggregation queries for Energy Consumption & Breakdown
- │   ├── 03_carbon_emission_view.sql # View for Monthly Carbon Emission
- ├── 📂 diagrams
- │   ├── architecture_diagram.png  # AWS ETL pipeline diagram from Document B
- │   ├── erd_diagram.png           # Entity-Relationship Diagram (ERD)
- ├── execute_sql_scripts.py        # Runs all SQL scripts for table creation & data processing
- ├── ingest_cfp_data.py            # Fetches Carbon Footprint (CFP) data from AWS S3
- ├── ingest_energy_data.py         # Downloads energy dataset from energy_data.xlsx
- ├── process_energy_data.py        # Cleans, transforms, and resamples energy data
- ├── upload_to_postgres.py         # Loads processed data into PostgreSQL tables
- ├── README.md                     # Documentation of the project
+│  
+├── 📂 data
+│   ├── 📂 raw             # Raw data (original files before processing)
+│   ├── 📂 processed       # Processed & cleaned data after transformation
+│   ├── 📂 cleaned         # Final transformed data used for loading into PostgreSQL
+│   ├── 📂 reports         # Data quality reports & validation summaries
+│   ├── 📂 output          # Exported tables from PostgreSQL (Energy_Consumption.csv, Energy_Breakdown.csv)
+│  
+├── 📂 sql
+│   ├── 01_create_tables.sql        # Defines PostgreSQL schema for all tables
+│   ├── 02_data_aggregation.sql     # Aggregation queries for Energy Consumption & Breakdown
+│   ├── 03_carbon_emission_view.sql # SQL view for Monthly Carbon Emission calculations
+│  
+├── 📂 diagrams
+│   ├── architecture_diagram.png  # AWS ETL pipeline diagram (Document B)
+│   ├── erd_diagram.png           # Entity-Relationship Diagram (ERD) showing database schema
+│  
+├── 📜 execute_sql_scripts.py     # Automates execution of SQL scripts for table creation & data processing
+├── 📜 ingest_cfp_data.py         # Fetches Carbon Footprint (CFP) data from AWS S3
+├── 📜 ingest_energy_data.py      # Downloads and extracts energy dataset from energy_data.xlsx
+├── 📜 process_energy_data.py     # Cleans, transforms, and resamples energy data
+├── 📜 upload_to_postgres.py      # Loads processed data into PostgreSQL tables
+│  
+└── 📜 README.md                  # Project documentation detailing implementation & methodology
+
 
 ## 2. Data Ingestion & Processing
 
