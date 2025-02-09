@@ -1,0 +1,5 @@
+2025-02-09 00:46:53.132 WAT [22010] FATAL:  lock file "postmaster.pid" already exists
+2025-02-09 00:46:53.132 WAT [22010] HINT:  Is another postmaster (PID 21821) running in data directory "/usr/local/var/postgresql@14"?
+2025-02-09 01:04:37.071 GMT [39243] LOG:  invalid value for parameter "log_timezone": "Africa/Lagos"
+2025-02-09 01:04:37.071 GMT [39243] LOG:  invalid value for parameter "TimeZone": "Africa/Lagos"
+2025-02-09 01:04:37.071 GMT [39243] FATAL:  configuration file "/usr/local/var/postgresql@14/postgresql.conf" contains errors
