@@ -280,4 +280,4 @@ Output:
 
 ## 6. Architecure
 
-![1739083155194](image/README2/1739083155194.png)
+![Architecture](1739083155194.png)
