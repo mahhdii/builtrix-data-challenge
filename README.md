@@ -109,7 +109,9 @@ The database consists of **three primary tables**:
 2. **`cfp_table`** - Stores hourly energy mix percentages.
 3. **`temperature_table`** - Stores temperature readings at 15-minute intervals.
 
-![1739083588040](image/README2/1739083588040.jpg)
+
+![ERD](1739083588040.png)
+
 
 #### SQL Table Creation Scripts
 
